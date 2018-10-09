@@ -56,16 +56,15 @@ def stackify():
 
 # -------------------------- DO NOT MODIFY ANYTHING ABOVE THIS LINE ----------------
 
-def flip_flop(word):
-	ham = word
+def flip_flop():
 	p = Stack()
+	is_palindrone = None
+	word = input('test a word for is_palindrone:')
+	p.push(word)
+	if str(p).lower() == str(p.pop()).lower():
+		is_palindrone = print(True)
+	else:
+		is_palindrone = print(False)
+	return is_palindrone
 
-	for each in ham:
-		p.push(each)
-
-	print()
-	print(sentence,end = " ")
-
-	return p
-
-flip_flop(stackify())
+flip_flop()
