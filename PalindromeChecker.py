@@ -57,14 +57,14 @@ def stackify():
 # -------------------------- DO NOT MODIFY ANYTHING ABOVE THIS LINE ----------------
 
 def flip_flop():
-	p = Stack()
-	is_palindrone = None
-	word = input('test a word for is_palindrone:')
-	p.push(word)
-	if str(p).lower() == str(p.pop()).lower():
+	p = Stack()  # created a new stack
+	is_palindrone = None     #initalized to none
+	word = input('test a word for is_palindrone:')    # collect a test object
+	p.push(word)      # pushed it to the stack
+	if str(p).lower() == str(p.pop()).lower():     # tested if it is a palindrone or not
 		is_palindrone = print(True)
 	else:
 		is_palindrone = print(False)
 	return is_palindrone
 
-flip_flop()
+flip_flop()     # function call
