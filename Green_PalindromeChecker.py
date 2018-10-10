@@ -61,9 +61,7 @@ def flip_flop():
 	is_palindrone = None     #initalized to none
 	word = input('test a word for is_palindrone:')    # collect a test object
 	p.push(word)      # pushed it to the stack
-	if len(str(p)) == 1:
-		is_palindrone = print(word, 'is not a palindrome')
-	elif str(p).lower() == str(p.pop()).lower():     # tested if it is a palindrone or not
+	if str(p).lower() == str(p.pop()).lower():     # tested if it is a palindrone or not
 		is_palindrone = print(word, ' is a palindrome ')
 	else:
 		is_palindrone = print(word, 'is not a palindrome')
